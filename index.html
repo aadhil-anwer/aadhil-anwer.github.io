@@ -113,11 +113,16 @@
               <ion-icon name="calendar-outline"></ion-icon>
             </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+          <div class="contact-info">
+    <p class="contact-title">Birthday</p>
+    
+    <script>
+        var currentDate = new Date();
+        var formattedDate = currentDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+        document.write('<time datetime="' + currentDate.toISOString().split('T')[0] + '">' + formattedDate + '</time>');
+    </script>
+</div>
 
-              <time datetime="1982-06-23">March 20, 2003</time>
-            </div>
 
           </li>
 
