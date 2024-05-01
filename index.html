@@ -118,8 +118,10 @@
     
     <script>
         var currentDate = new Date();
-        var formattedDate = currentDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-        document.write('<time datetime="' + currentDate.toISOString().split('T')[0] + '">' + formattedDate + '</time>');
+currentDate.setFullYear(2003); // Set the year to 2003
+var formattedDate = currentDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+document.write('<time datetime="' + currentDate.toISOString().split('T')[0] + '">' + formattedDate + '</time>');
+
     </script>
 </div>
 
